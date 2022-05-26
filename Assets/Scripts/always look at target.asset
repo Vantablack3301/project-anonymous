@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: always look at target
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[{"name":"self","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"target","value":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Max
+      Radians Delta","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Max
+      Magnitude Delta","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-155.4833,"y":-235.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-615.0,"y":-339.0},"guid":"8a719d7b-0c8d-4a6b-bbbb-6f0220a3702c","$version":"A","$type":"Unity.VisualScripting.FixedUpdate","$id":"13"},{"chainable":false,"member":{"name":"RotateTowards","parameterTypes":["UnityEngine.Vector3","UnityEngine.Vector3","System.Single","System.Single"],"targetType":"UnityEngine.Vector3","targetTypeName":"UnityEngine.Vector3","$version":"A"},"defaultValues":{"%current":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%maxRadiansDelta":{"$content":0.0,"$type":"System.Single"},"%maxMagnitudeDelta":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-63.0,"y":-326.0},"guid":"9c38874d-ca32-4601-a439-227818ed79db","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"self","$type":"System.String"}},"position":{"x":-623.0,"y":-194.0},"guid":"0ee1f4b4-0d07-45b0-8f97-6fc12fa3fb59","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"18"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"target","$type":"System.String"}},"position":{"x":-597.0,"y":-50.0},"guid":"2a07bf01-d76c-4c1e-9649-70798443f71c","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"20"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"Max
+      Radians Delta","$type":"System.String"}},"position":{"x":-653.0,"y":76.0},"guid":"62e64c2c-e6bf-4e11-9bee-f982f313763c","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"22"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"Max
+      Magnitude Delta","$type":"System.String"}},"position":{"x":-463.0,"y":91.0},"guid":"ed23557f-8340-47b3-9f85-1c35e50c9044","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"24"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"8c788ff7-de23-4de4-abf7-6d83e65ce4f8","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"15"},"destinationKey":"%current","guid":"e10a2382-da4a-4f41-9ca6-b91de8e5352c","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"value","destinationUnit":{"$ref":"15"},"destinationKey":"%target","guid":"d997c10e-edf3-4d7d-8d49-413b2dc36645","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"value","destinationUnit":{"$ref":"15"},"destinationKey":"%maxRadiansDelta","guid":"664f2df0-0142-4835-80c6-85d1812925bb","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"24"},"sourceKey":"value","destinationUnit":{"$ref":"15"},"destinationKey":"%maxMagnitudeDelta","guid":"fe77d8a4-e530-4678-b9e1-698e24b3c5a5","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
