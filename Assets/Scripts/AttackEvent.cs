@@ -8,41 +8,11 @@ public class AttackEvent : MonoBehaviour
 {
     public float cooldownTime = 2;
     public float Damage = 100;
-    private int hits = 0;
-
-    protected Animator animationObject;
 
     protected bool cooldown = false;
     public GameObject playerObject;
     List<GameObject> AttackRange = new List<GameObject>();
     // Start is called before the first frame update
-
-    void Start()
-    {
-        animationObject = playerObject.GetComponent(typeof(Animator)) as Animator;
-    }
-
-    void FixedUpdate() {
-        float isAttacking = Input.GetAxis("Fire1");
-        bool hitting = false;
-        if (isAttacking > .1 && hitting == false)
-        {
-            hitting = true;
-            hits ++;
-            if (hits%2==0)
-            {
-                animationObject.SetBool("isInward", true);
-            }
-            else
-            {
-                animationObject.SetBool("isInward", false);
-            }
-        }
-        else
-        {
-            hitting = false;
-        }
-    }
 
     void Update()
     {
@@ -52,7 +22,6 @@ public class AttackEvent : MonoBehaviour
         float isAttacking = Input.GetAxis("Fire1");
         if (isAttacking > .1 && cooldown == false)
         {
-            animationObject.SetTrigger("Attack");
             cooldown = true;
             playerScript.canMove = false;
             //Debug.Log("cooldown in effect");
@@ -87,7 +56,6 @@ public class AttackEvent : MonoBehaviour
             yield return new WaitForSeconds(cooldownTime);
             cooldown = false;
             playerScript.canMove = true;
-            animationObject.ResetTrigger("Attack");
             //Debug.Log("cooldown ended");
         }
     }

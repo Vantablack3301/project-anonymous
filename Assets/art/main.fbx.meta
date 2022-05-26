@@ -34,7 +34,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 5
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -63,7 +63,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -72,10 +72,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 951f951a7b1c18b45bcbc3adc94b7f2a
-  - 9891757f25418ac4c97d5a25e669d197
-  - e650cc9bedc94b24f858cae4899eaa02
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -226,12 +223,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__skin
       parentName: Skin
-      position: {x: -0, y: 0.5334329, z: 0}
+      position: {x: -0, y: 1.0668658, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pCube2
       parentName: pasted__skin
-      position: {x: -0, y: 0.36807168, z: 0.040177517}
+      position: {x: -0, y: 0.73614335, z: 0.08035503}
       rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
       scale: {x: 3.376708, y: 3.376708, z: 2.942252}
     - name: pasted__Helmet
@@ -241,62 +238,62 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__group1
       parentName: pasted__Helmet
-      position: {x: -0, y: 0.39963382, z: -0.4139194}
+      position: {x: -0, y: 0.79926765, z: -0.8278388}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.45179838, y: 0.45179838, z: 0.5020812}
     - name: pasted__pCube3
       parentName: pasted__group1
-      position: {x: -0, y: -0.009338027, z: 0.8898003}
+      position: {x: -0, y: -0.018676054, z: 1.7796006}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 7.1279755, y: 6.423646, z: 6.423646}
     - name: pasted__pCube4
       parentName: pasted__group1
-      position: {x: -0, y: 0.18162763, z: 1.0777522}
+      position: {x: -0, y: 0.36325526, z: 2.1555045}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1.7629778, y: 1.7629778, z: 0.88796777}
     - name: pasted__pCube5
       parentName: pasted__Helmet
-      position: {x: -0, y: 0.39069864, z: 0.17302163}
+      position: {x: -0, y: 0.7813973, z: 0.34604326}
       rotation: {x: 0.148046, y: -0, z: -0, w: 0.9889805}
       scale: {x: 0.43227547, y: 0.76864624, z: 0.5443077}
     - name: pasted__pPlane1 1
       parentName: pasted__Helmet
-      position: {x: 0.005394422, y: 0.2753571, z: 0.14712784}
+      position: {x: 0.010788845, y: 0.5507142, z: 0.29425567}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 4.166729, y: 1.6447616, z: 1.6447616}
     - name: pasted__pCylinder1
       parentName: pasted__Helmet
-      position: {x: 0.005622279, y: 0.29040822, z: 0.13100767}
+      position: {x: 0.011244558, y: 0.58081645, z: 0.26201534}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.6177743, y: 0.13994657, z: 0.3369546}
     - name: pasted__group 1
       parentName: pasted__Helmet
-      position: {x: 0.0056222826, y: 0.2556375, z: 0.13943154}
+      position: {x: 0.011244565, y: 0.511275, z: 0.27886307}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pCylinder1
       parentName: pasted__group 1
-      position: {x: -0.0000000036822216, y: 0, z: -0.008423865}
+      position: {x: -0.0000000073644433, y: 0, z: -0.01684773}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.6177743, y: 0.13994657, z: 0.3369546}
     - name: pasted__pCone1
       parentName: pasted__Helmet
-      position: {x: -0.02424602, y: 0.28382242, z: 0.13873923}
+      position: {x: -0.048492044, y: 0.56764483, z: 0.27747846}
       rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
       scale: {x: 0.07868225, y: 0.3032896, z: 0.07868225}
     - name: pasted__group2
       parentName: pasted__Helmet
-      position: {x: 0.035533704, y: 0.28382242, z: 0.13849188}
+      position: {x: 0.07106741, y: 0.56764483, z: 0.27698377}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pCone1
       parentName: pasted__group2
-      position: {x: 4.6898274e-10, y: -0.0000000027116203, z: 0.00024735322}
+      position: {x: 9.379655e-10, y: -0.0000000054232405, z: 0.00049470644}
       rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
       scale: {x: 0.07868225, y: 0.3032896, z: 0.07868225}
     - name: pasted__group3
       parentName: pasted__Helmet
-      position: {x: 0.030536057, y: 0.2619438, z: 0.14085205}
+      position: {x: 0.061072115, y: 0.5238876, z: 0.2817041}
       rotation: {x: -1.2430401e-17, y: -0.20300385, z: 0.97917795, w: 5.995736e-17}
       scale: {x: 1, y: 0.62489223, z: 1}
     - name: pasted__pasted__group2
@@ -306,17 +303,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pasted__pCone1
       parentName: pasted__pasted__group2
-      position: {x: 4.6898274e-10, y: -0.0000000027116203, z: 0.00024735322}
+      position: {x: 9.379655e-10, y: -0.0000000054232405, z: 0.00049470644}
       rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
       scale: {x: 0.07868225, y: 0.3032896, z: 0.07868225}
     - name: pasted__group4
       parentName: pasted__Helmet
-      position: {x: -0.01840242, y: 0.2619438, z: 0.14085205}
+      position: {x: -0.03680484, y: 0.5238876, z: 0.2817041}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__group3
       parentName: pasted__group4
-      position: {x: -1.11022296e-17, y: -4.4408918e-17, z: 2.2204459e-17}
+      position: {x: -2.2204459e-17, y: -8.8817837e-17, z: 4.4408918e-17}
       rotation: {x: -1.2430401e-17, y: -0.20300385, z: 0.97917795, w: 5.995736e-17}
       scale: {x: 1, y: 0.62489223, z: 1}
     - name: pasted__pasted__pasted__group2
@@ -326,7 +323,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pasted__pasted__pCone1
       parentName: pasted__pasted__pasted__group2
-      position: {x: 4.6898274e-10, y: -0.0000000027116203, z: 0.00024735322}
+      position: {x: 9.379655e-10, y: -0.0000000054232405, z: 0.00049470644}
       rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
       scale: {x: 0.07868225, y: 0.3032896, z: 0.07868225}
     - name: pasted__pCube1
@@ -336,187 +333,187 @@ ModelImporter:
       scale: {x: 9.586222, y: 9.586222, z: 2.7568264}
     - name: pasted__pPlane2
       parentName: Skin
-      position: {x: -0.0037379467, y: 0.59159565, z: 0.097648695}
+      position: {x: -0.0074758935, y: 1.1831913, z: 0.19529739}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 7.5897517, y: 7.5897517, z: 12.180509}
     - name: pasted__group5
       parentName: Skin
-      position: {x: -0.3733628, y: 0.55883044, z: 0.4625424}
+      position: {x: -0.7467257, y: 1.1176609, z: 0.9250849}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pPlane2
       parentName: pasted__group5
-      position: {x: 0.3695894, y: 0.07501383, z: -0.37606522}
+      position: {x: 0.7391788, y: 0.15002766, z: -0.75213045}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 7.5897517, y: 7.5897517, z: 10.905298}
     - name: pasted__group6
       parentName: Skin
-      position: {x: 0.43810952, y: 0.55883044, z: 0.4625424}
+      position: {x: 0.87621903, y: 1.1176609, z: 0.9250849}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pPlane2 1
       parentName: pasted__group6
-      position: {x: -0.43307036, y: 0.017636422, z: -0.35369903}
+      position: {x: -0.8661407, y: 0.035272844, z: -0.70739806}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 7.5897517, y: 7.5897517, z: 7.5897517}
     - name: pasted__group7
       parentName: Skin
-      position: {x: 0.012336429, y: 0.5547571, z: -0.16875881}
+      position: {x: 0.024672858, y: 1.1095142, z: -0.33751762}
       rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pPlane2 2
       parentName: pasted__group7
-      position: {x: 0.005669766, y: 0.052511103, z: -0.059972603}
+      position: {x: 0.011339532, y: 0.10502221, z: -0.11994521}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 6.8975167, y: 7.5897517, z: 12.180509}
     - name: pasted__pasted__group5
       parentName: pasted__group7
-      position: {x: -0.3856992, y: 0.004073333, z: 0.38895065}
+      position: {x: -0.7713985, y: 0.008146666, z: 0.77790135}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pasted__pPlane2
       parentName: pasted__pasted__group5
-      position: {x: 0.39133352, y: 0.090686396, z: -0.46009472}
+      position: {x: 0.78266704, y: 0.18137279, z: -0.9201895}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 5.947787, y: 7.5897517, z: 10.905298}
     - name: pasted__pasted__group6
       parentName: pasted__group7
-      position: {x: 0.42577308, y: 0.004073333, z: 0.38895065}
+      position: {x: 0.85154617, y: 0.008146666, z: 0.77790135}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pasted__pPlane2 1
       parentName: pasted__pasted__group6
-      position: {x: -0.4113262, y: 0.010712678, z: -0.43772852}
+      position: {x: -0.82265246, y: 0.021425355, z: -0.87545705}
       rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
       scale: {x: 7.5897517, y: 7.5897517, z: 7.5897517}
     - name: pasted__pPlane3
       parentName: Skin
-      position: {x: 0.26103875, y: 0.72107947, z: 0.0072270306}
+      position: {x: 0.5220775, y: 1.4421589, z: 0.014454061}
       rotation: {x: 0.17106159, y: 0.68610346, z: -0.17106159, w: 0.68610346}
       scale: {x: 6.9216495, y: 7.6176577, z: 10.171962}
     - name: pasted__group8
       parentName: Skin
-      position: {x: -0.26772207, y: 0.7219814, z: 0.0072270306}
+      position: {x: -0.53544414, y: 1.4439629, z: 0.014454061}
       rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__pasted__pPlane3
       parentName: pasted__group8
-      position: {x: -0.0032704314, y: 0.0012674982, z: -1.11022296e-17}
+      position: {x: -0.006540863, y: 0.0025349967, z: -2.2204459e-17}
       rotation: {x: 0.17106159, y: 0.68610346, z: -0.17106159, w: 0.68610346}
       scale: {x: 6.9216495, y: 7.6176577, z: 10.171962}
     - name: group13
       parentName: Skin
-      position: {x: -0.18373726, y: 0.11336968, z: 0.093798}
+      position: {x: -0.36747453, y: 0.22673936, z: 0.187596}
       rotation: {x: -1.4554603e-18, y: -0.7188916, z: 1.4554603e-18, w: 0.6951222}
       scale: {x: 1, y: 1, z: 1}
     - name: pasted__group
       parentName: group13
-      position: {x: -2.2204459e-17, y: 0, z: 0}
+      position: {x: -4.4408918e-17, y: 0, z: 0}
       rotation: {x: 0, y: 0.33577836, z: -0, w: 0.9419411}
       scale: {x: 0.5877275, y: 1, z: 1}
     - name: pasted__pasted__pPlane1
       parentName: pasted__group
-      position: {x: 0.0147105595, y: 0.017241076, z: -0.07037266}
+      position: {x: 0.02942112, y: 0.03448215, z: -0.14074533}
       rotation: {x: 0.6768224, y: 0.04200703, z: -0.04562435, w: 0.7335294}
       scale: {x: 5.811337, y: 11.643289, z: 8.455309}
     - name: group
       parentName: Skin
-      position: {x: 0.17794524, y: 0.11336968, z: 0.12259514}
+      position: {x: 0.3558905, y: 0.22673936, z: 0.24519028}
       rotation: {x: 0, y: 0.33577836, z: -0, w: 0.9419411}
       scale: {x: 0.5877275, y: 1, z: 1}
     - name: pasted__pPlane1
       parentName: group
-      position: {x: 0.005421947, y: 0.017241076, z: -0.086339734}
+      position: {x: 0.010843895, y: 0.03448215, z: -0.17267948}
       rotation: {x: 0.68310726, y: -0.0050884956, z: 0.011363079, w: 0.7302119}
       scale: {x: 5.811337, y: 11.643289, z: 8.455309}
     - name: pPlane1
       parentName: Skin
-      position: {x: -0, y: 0.09437323, z: 0.09356051}
+      position: {x: -0, y: 0.18874647, z: 0.18712102}
       rotation: {x: 0.67362773, y: -0, z: -0, w: 0.73907083}
       scale: {x: 5.811337, y: 11.643289, z: 9.7815275}
     - name: pCylinder1
       parentName: Skin
-      position: {x: -0, y: 0.14621499, z: -0.00008314256}
+      position: {x: -0, y: 0.29242998, z: -0.00016628511}
       rotation: {x: 0.020269858, y: -0, z: -0, w: 0.99979454}
       scale: {x: 4.462294, y: 3.915089, z: 2.930336}
     - name: Skeleton
       parentName: main(Clone)
-      position: {x: -0.0011331323, y: 0.9757538, z: -0.07339488}
+      position: {x: -0.0022662645, y: 1.9515076, z: -0.14678976}
       rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Hip
       parentName: Skeleton
-      position: {x: 0.17672855, y: -0.11263284, z: 0.045672532}
+      position: {x: 0.3534571, y: -0.22526568, z: 0.09134507}
       rotation: {x: 0, y: 0, z: 0.9994175, w: 0.034128275}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Knee
       parentName: L_Hip
-      position: {x: -0.38128042, y: -0.03693512, z: 0.06742136}
+      position: {x: -0.7625609, y: -0.07387024, z: 0.13484272}
       rotation: {x: 0.9982153, y: 0.059717935, z: 3.656669e-18, w: 6.1123056e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Ankle
       parentName: L_Knee
-      position: {x: -0.32477024, y: 0.0030074238, z: 0.08917018}
+      position: {x: -0.6495405, y: 0.006014848, z: 0.17834036}
       rotation: {x: -0.025615782, y: 0.9996719, z: 6.1212245e-17, w: -1.5685142e-18}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Hip
       parentName: Skeleton
-      position: {x: 0.17672834, y: 0.112632625, z: 0.04567253}
+      position: {x: 0.3534567, y: 0.22526525, z: 0.09134506}
       rotation: {x: 0.9994175, y: 0.034128275, z: 2.5427546e-10, w: 0.0000000074462405}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Knee
       parentName: R_Hip
-      position: {x: 0.3812806, y: 0.036934774, z: -0.06742134}
+      position: {x: 0.7625612, y: 0.07386955, z: -0.13484268}
       rotation: {x: 0.9982153, y: 0.059717935, z: 3.1734773e-12, w: 5.3046265e-11}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Ankle
       parentName: R_Knee
-      position: {x: 0.3247702, y: -0.0030074182, z: -0.08917014}
+      position: {x: 0.6495404, y: -0.006014837, z: -0.17834029}
       rotation: {x: -0.025615782, y: 0.9996719, z: 0.000000009124236, w: -2.3380115e-10}
       scale: {x: 1, y: 1, z: 1}
     - name: Chest
       parentName: Skeleton
-      position: {x: -0.22909255, y: -1.7347234e-19, z: 0}
+      position: {x: -0.4581851, y: -3.4694467e-19, z: 0}
       rotation: {x: -0.7048757, y: 0.17645061, z: 0.16683632, w: 0.66646916}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Shoulder
       parentName: Chest
-      position: {x: -0.07197637, y: -0.03544065, z: -0.18760595}
+      position: {x: -0.14395274, y: -0.0708813, z: -0.3752119}
       rotation: {x: 0.2923139, y: -0.6140617, z: 0.3441197, w: 0.6473503}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Elbow
       parentName: L_Shoulder
-      position: {x: -0.31871614, y: -0.0031299866, z: -0.049461134}
+      position: {x: -0.6374323, y: -0.006259973, z: -0.09892227}
       rotation: {x: -0.004036679, y: -0.15286691, z: -0.038348474, w: 0.9874943}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Wrist
       parentName: L_Elbow
-      position: {x: -0.16828994, y: -0.009722931, z: 0.04030272}
+      position: {x: -0.33657992, y: -0.019445863, z: 0.08060544}
       rotation: {x: -0.50956035, y: 0.86043495, z: -5.2686445e-17, w: 3.1201574e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Shoulder
       parentName: Chest
-      position: {x: -0.08456069, y: -0.0516431, z: 0.17836764}
+      position: {x: -0.16912138, y: -0.1032862, z: 0.3567353}
       rotation: {x: 0.5797259, y: 0.2686458, z: 0.6767245, w: -0.36577502}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Elbow
       parentName: R_Shoulder
-      position: {x: 0.3187154, y: 0.0031287526, z: 0.04946115}
+      position: {x: 0.6374308, y: 0.006257505, z: 0.0989223}
       rotation: {x: -0.004140003, y: -0.15226811, z: -0.03851518, w: 0.9875798}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Wrist
       parentName: R_Elbow
-      position: {x: 0.16829102, y: 0.009721465, z: -0.040302742}
+      position: {x: 0.33658203, y: 0.01944293, z: -0.080605485}
       rotation: {x: -0.50956035, y: 0.86043495, z: 1.0079612e-15, w: -5.969272e-16}
       scale: {x: 1, y: 1, z: 1}
     - name: Neck
       parentName: Chest
-      position: {x: -0.09531666, y: 0, z: -7.632783e-18}
+      position: {x: -0.19063333, y: 0, z: -1.5265565e-17}
       rotation: {x: -0.6465679, y: 0.23230428, z: -0.22548124, w: 0.6907553}
       scale: {x: 1, y: 1, z: 1}
     - name: Head
       parentName: Neck
-      position: {x: -0.10711472, y: -0.00012373332, z: -0.01746731}
+      position: {x: -0.21422943, y: -0.00024746664, z: -0.03493462}
       rotation: {x: -0.6966351, y: 0.71742564, z: 2.4913216e-16, w: 1.6867e-16}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
@@ -526,7 +523,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 5
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
