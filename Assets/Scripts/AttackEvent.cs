@@ -47,7 +47,7 @@ public class AttackEvent : MonoBehaviour
     void Update()
     {
         StartCoroutine(Cooldown());
-        //var playerController = playerObject.GetComponent<ThirdPersonController>();
+        var playerController = playerObject.GetComponent<ThirdPersonController>();
         var playerScript = playerObject.GetComponent(typeof(ThirdPersonController)) as ThirdPersonController;
         float isAttacking = Input.GetAxis("Fire1");
         if (isAttacking > .1 && cooldown == false)

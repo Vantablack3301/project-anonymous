@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
         if (triggerScript.isTriggered == true || isActivated == true)
         {
             // Move our position a Step closer to the target.
-            if (canAttack == false && inEffect == false && cooldown == false)
+            if (canAttack == false /*&& inEffect == false && cooldown == false*/)
             {
                 Step = speed * Time.deltaTime; // calculate distance to move
                 //animator.SetFloat("Speed", speed);
@@ -119,6 +119,8 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Material newMat = Resources.Load("Prototype_512x512_Magenta", typeof(Material)) as Material;
+            gameObject.GetComponent<Renderer>().material = newMat;
             playerObject = other.gameObject;
             attackRoot = playerObject.transform.GetChild(3).gameObject;
             canAttack = true;
