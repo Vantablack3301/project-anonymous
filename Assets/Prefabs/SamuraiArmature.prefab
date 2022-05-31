@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6241372527450002256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,6 +325,7 @@ MonoBehaviour:
   cooldownTime: 0.5
   Damage: 100
   playerObject: {fileID: 350186432570510648}
+  AttackRange: []
 --- !u!65 &4147831107840605359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -353,6 +354,7 @@ MonoBehaviour:
   health: 300
   staggerDamage: 80
   staggerTime: 1
+  animTime: 4
   playerObject: {fileID: 350186432570510648}
   playerScript: {fileID: 350186432570510643}
 --- !u!1 &5344092161374893155

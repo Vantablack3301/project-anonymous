@@ -31,7 +31,7 @@ public class enemyAttackEvent : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             playerObject = other.gameObject;
             attackRoot = playerObject.transform.GetChild(3).gameObject;

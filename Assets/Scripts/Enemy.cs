@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
         if (triggerScript.isTriggered == true || isActivated == true)
         {
             // Move our position a Step closer to the target.
-            if (canAttack == false /*&& inEffect == false && cooldown == false*/)
+            if (canAttack == false && inEffect == false && cooldown == false)
             {
                 Step = speed * Time.deltaTime; // calculate distance to move
                 //animator.SetFloat("Speed", speed);

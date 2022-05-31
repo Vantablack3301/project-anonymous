@@ -14,7 +14,7 @@ public class AttackEvent : MonoBehaviour
 
     protected bool cooldown = false;
     public GameObject playerObject;
-    List<GameObject> AttackRange = new List<GameObject>();
+    public List<GameObject> AttackRange = new List<GameObject>();
     // Start is called before the first frame update
 
     void Start()
