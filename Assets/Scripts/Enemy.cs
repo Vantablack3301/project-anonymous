@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
     protected float Step;
 
     protected bool isActivated = false;
-
+    protected Rigidbody rb;
     protected Vector3 targetPosition;
 
     private bool inEffect;
@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
         Vector3 targetPosition = new Vector3( target.position.x, this.transform.position.y, target.position.z ) ;
         transform.LookAt(targetPosition);
         inEffect = selfAttackScript.inEffect;
-        Rigidbody rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         rb.MovePosition(transform.position + Vector3.up * -2.0f);
         animator.SetFloat("MotionSpeed", 1);
     }
@@ -72,9 +72,12 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         var triggerScript = triggerVolume.GetComponent<trigger>();
-        if (triggerScript.isTriggered == true || isActivated == true)
+        if (triggerScript.isTriggered == true/* || isActivated == true*/)
         {
             // Move our position a Step closer to the target.
+            /*Debug.Log(canAttack);
+            Debug.Log(inEffect);
+            Debug.Log(cooldown);*/
             if (canAttack == false && inEffect == false && cooldown == false)
             {
                 Step = speed * Time.deltaTime; // calculate distance to move
@@ -117,8 +120,12 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("Enemy: OnTriggerEnter");
         if (other.gameObject.tag == "Player")
         {
+            //why doesnt this useless piece of shit stop the enemy from moving anymore?
+            //it still detects that the player enters the collider, it just does nothing
+            Debug.Log("player enter");
             Material newMat = Resources.Load("Prototype_512x512_Magenta", typeof(Material)) as Material;
             gameObject.GetComponent<Renderer>().material = newMat;
             playerObject = other.gameObject;
@@ -129,8 +136,10 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        //Debug.Log("Enemy: OnTriggerExit");
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("player exit");
             playerObject = null;
             attackRoot = null;
             canAttack = false;

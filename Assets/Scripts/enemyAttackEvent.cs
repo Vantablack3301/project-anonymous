@@ -31,8 +31,11 @@ public class enemyAttackEvent : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("enemyAttackEvent: OnTriggerEnter");
         if (other.gameObject.CompareTag("Player"))
         {
+            //this is fucking bad stupid garbage code that doesnt fucking work. why. has i ever?
+            Debug.Log("player enter ATTACKEVENT");
             playerObject = other.gameObject;
             attackRoot = playerObject.transform.GetChild(3).gameObject;
             canAttack = true;
@@ -43,6 +46,8 @@ public class enemyAttackEvent : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        //Debug.Log("enemyAttackEvent: OnTriggerExit");
+        Debug.Log("player exit ATTACKEVENT");
         playerObject = null;
         attackRoot = null;
         canAttack = false;

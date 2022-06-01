@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8750249367150654108}
   - component: {fileID: 8750249367150654107}
   - component: {fileID: 8750249367150654106}
+  - component: {fileID: 2553382169984525150}
   - component: {fileID: 8750249367150654105}
   - component: {fileID: 8750249367150654111}
   - component: {fileID: 8750249367150654110}
@@ -102,7 +103,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8750249367150654105
+--- !u!114 &2553382169984525150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,6 +111,34 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8750249367150654104}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f142d8e761ed104429c031b1662db9bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  cooldownTime: 2
+  StaggerTime: 2
+  attackTime: 2
+  Damage: 100
+  triggerVolume: {fileID: 0}
+  playerObject: {fileID: 0}
+  attackRoot: {fileID: 0}
+  selfAttackScript: {fileID: 0}
+  target: {fileID: 0}
+  canAttack: 0
+  isAttacking: 0
+  Staggered: 0
+  cooldown: 0
+  Step: 0
+  animator: {fileID: 0}
+--- !u!114 &8750249367150654105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750249367150654104}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a9db4c1c8e6c514d998ac41dc6b157c, type: 3}
   m_Name: 
