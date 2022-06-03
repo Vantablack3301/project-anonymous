@@ -197,5 +197,13 @@ public class Enemy : MonoBehaviour
             animator.SetFloat("Speed", 0f);
         }
     }
+    public void PopulateOnStart(){
+        //dynamically get the player object, the trigger, and the attack root on the start of the script
+        playerObject = GameObject.FindGameObjectWithTag("Player");
+        attackRoot = playerObject.transform.GetChild(3).gameObject;
+        target = playerObject.transform;
+        triggerVolume = GameObject.FindGameObjectWithTag("Trigger");
+    }
+
 }
 

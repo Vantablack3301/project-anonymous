@@ -17,7 +17,6 @@ public class enemyAttackEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -47,10 +46,18 @@ public class enemyAttackEvent : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         //Debug.Log("enemyAttackEvent: OnTriggerExit");
-        Debug.Log("player exit ATTACKEVENT");
+        //check if object other is player
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("player exit ATTACKEVENT");
+            canAttack = false;
+            Debug.Log("player out of range");
+            //StopCoroutine(Attack());
+        }
+        /*Debug.Log("player exit ATTACKEVENT");
         playerObject = null;
         attackRoot = null;
-        canAttack = false;
+        canAttack = false;*/
         //Debug.Log("player out of range");
     }
 
