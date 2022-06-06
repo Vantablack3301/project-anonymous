@@ -12,7 +12,8 @@ public class EnemyCOPILOT : MonoBehaviour
     public CharacterController enemyController;
 
     //floats
-    public float speed = 3.0f;
+    [Range(0.0f, 1.0f)]
+    public float speed = 1.0f;
     public float cooldownTime = 2;
     public float StaggerTime = 2;
     public float attackTime = 2;
@@ -40,8 +41,9 @@ public class EnemyCOPILOT : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
+    {   
+        //set the animator float "MotionSpeed" to speed
+        animator.SetFloat("MotionSpeed", speed);
         //check if the trigger volume has been triggered
         if (triggerVolume.GetComponent<trigger>().isTriggered == true)
         {
@@ -56,13 +58,21 @@ public class EnemyCOPILOT : MonoBehaviour
                 //move downwards at a constant rate of -9.81
                 enemyController.Move(new Vector3(0, -9.81f, 0) * Time.deltaTime);
                 //call the function toggleAnimations only once
-                toggleAnimations(true);
+                if (inEffect == false)
+                {
+                    toggleAnimations(true);
+                    inEffect = true;
+                }
             }
             //else, if the player is not in range then run the attack coroutine with the proper timings
             else if (inRange == true)
             {
-                //call the function toggleAnimations only once
-                toggleAnimations(false);
+                //call the function toggleAnimations only once and pass in a false value
+                if (inEffect == true)
+                {
+                    toggleAnimations(false);
+                    inEffect = false;
+                }
                 //if the enemy is not in cooldown, then run the attack coroutine with the proper timings
                 if (cooldown == false)
                 {
@@ -166,11 +176,13 @@ public class EnemyCOPILOT : MonoBehaviour
         //if the bool isAnimating is true, then set the animator float "Speed" to speed
         if (isAnimating == true)
         {
+            Debug.Log("animating");
             animator.SetFloat("Speed", speed);
         }
         //else, if the bool isAnimating is false, then set the animator float "Speed" to 0
         else
         {
+            Debug.Log("not animating");
             animator.SetFloat("Speed", 0);
         }
     }

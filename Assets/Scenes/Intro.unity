@@ -1228,8 +1228,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6674562541336670595, guid: 62c477ccd34af9943971779c089cb673, type: 3}
+    - target: {fileID: 6674562541336670595, guid: 62c477ccd34af9943971779c089cb673, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674562541336670595, guid: 62c477ccd34af9943971779c089cb673, type: 3}
+      propertyPath: triggerVolume
+      value: 
+      objectReference: {fileID: 1900754539}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c477ccd34af9943971779c089cb673, type: 3}
 --- !u!1001 &1388220461
 PrefabInstance:
@@ -1442,48 +1449,6 @@ PrefabInstance:
       objectReference: {fileID: 9000000, guid: fd92cdfcd1641764db2972287f47d023, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3c614dbaff7691469cf71e7a8f3d941, type: 3}
---- !u!1 &1601198384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5853109599712547217, guid: 62c477ccd34af9943971779c089cb673, type: 3}
-  m_PrefabInstance: {fileID: 1244771637}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1601198385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601198384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3525411677cd1044981836cda319b7c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObject: {fileID: 1177292512}
-  attackRoot: {fileID: 447971830}
-  triggerVolume: {fileID: 1900754539}
-  animator: {fileID: 1601198389}
-  enemyController: {fileID: 1601198386}
-  speed: 1
-  cooldownTime: 2
-  StaggerTime: 2
-  attackTime: 2
-  Damage: 100
-  Staggered: 0
-  inEffect: 0
-  isAttacking: 0
-  cooldown: 0
-  inRange: 0
---- !u!143 &1601198386 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 1477973614530528551, guid: 62c477ccd34af9943971779c089cb673, type: 3}
-  m_PrefabInstance: {fileID: 1244771637}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1601198389 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5853109599712547221, guid: 62c477ccd34af9943971779c089cb673, type: 3}
-  m_PrefabInstance: {fileID: 1244771637}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1615991601
 GameObject:
   m_ObjectHideFlags: 0

@@ -2276,6 +2276,7 @@ GameObject:
   - component: {fileID: 5853109599712547218}
   - component: {fileID: 6674562541336670595}
   - component: {fileID: 1477973614530528551}
+  - component: {fileID: 5504289887790958099}
   m_Layer: 0
   m_Name: AnimatedEnemy_COPILOT
   m_TagString: Enemy
@@ -2360,6 +2361,7 @@ MonoBehaviour:
   playerObject: {fileID: 0}
   attackRoot: {fileID: 0}
   triggerVolume: {fileID: 0}
+  animator: {fileID: 5853109599712547221}
   enemyController: {fileID: 1477973614530528551}
   speed: 1
   cooldownTime: 2
@@ -2370,7 +2372,6 @@ MonoBehaviour:
   inEffect: 0
   isAttacking: 0
   cooldown: 0
-  animator: {fileID: 5853109599712547221}
   inRange: 0
 --- !u!143 &1477973614530528551
 CharacterController:
@@ -2390,6 +2391,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.87, z: 0}
+--- !u!114 &5504289887790958099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5853109599712547217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4643166d68394429ae6f5cffbaacb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 200
 --- !u!1 &5853109599717853311
 GameObject:
   m_ObjectHideFlags: 0
