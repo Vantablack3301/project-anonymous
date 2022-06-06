@@ -28,7 +28,7 @@ public class EnemyCOPILOT : MonoBehaviour
     {
         //auto assign the player object and attack root, the enemy controller, and the animator
         playerObject = GameObject.FindGameObjectWithTag("Player");
-        attackRoot = playerObject.transform.GetChild(3).gameObject;
+        attackRoot = playerObject.transform.GetChild(0).gameObject;
         enemyController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         //set all valid animator bools (Grounded, Jump, FreeFall) to false
@@ -41,6 +41,7 @@ public class EnemyCOPILOT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //check if the trigger volume has been triggered
         if (triggerVolume.GetComponent<trigger>().isTriggered == true)
         {
@@ -55,21 +56,13 @@ public class EnemyCOPILOT : MonoBehaviour
                 //move downwards at a constant rate of -9.81
                 enemyController.Move(new Vector3(0, -9.81f, 0) * Time.deltaTime);
                 //call the function toggleAnimations only once
-                if (inEffect == false)
-                {
-                    toggleAnimations(true);
-                    inEffect = true;
-                }
+                toggleAnimations(true);
             }
             //else, if the player is not in range then run the attack coroutine with the proper timings
             else if (inRange == true)
             {
                 //call the function toggleAnimations only once
-                if (inEffect == true)
-                {
-                    toggleAnimations(false);
-                    inEffect = false;
-                }
+                toggleAnimations(false);
                 //if the enemy is not in cooldown, then run the attack coroutine with the proper timings
                 if (cooldown == false)
                 {
@@ -101,7 +94,7 @@ public class EnemyCOPILOT : MonoBehaviour
     IEnumerator Attack()
     {
         //set the bool for if the enemy is in effect to true
-        inEffect = true;
+        //inEffect = true;
         //set the bool for if the enemy is attacking to true
         isAttacking = true;
         //set the bool for if the enemy is staggered to false
@@ -129,7 +122,7 @@ public class EnemyCOPILOT : MonoBehaviour
         //set the bool for if the enemy is staggered to false
         Staggered = false;
         //set the bool for if the enemy is in effect to false
-        inEffect = false;
+        //inEffect = false;
     }
 
     //create an IEnumerator for the stagger function
@@ -138,7 +131,7 @@ public class EnemyCOPILOT : MonoBehaviour
         //set the bool for if the enemy is staggered to true
         Staggered = true;
         //set the bool for if the enemy is in effect to true
-        inEffect = true;
+        //inEffect = true;
         //set the bool for if the enemy is attacking to false
         isAttacking = false;
         //set the bool for if the enemy is in cooldown to false
@@ -164,7 +157,7 @@ public class EnemyCOPILOT : MonoBehaviour
         //set the bool for if the enemy is staggered to false
         Staggered = false;
         //set the bool for if the enemy is in effect to false
-        inEffect = false;
+        //inEffect = false;
     }
 
     //create a function called ToggleAnimations that takes in a bool named isAnimating
