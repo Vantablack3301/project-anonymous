@@ -25,6 +25,7 @@ public class EnemyCOPILOT : MonoBehaviour
     public bool isAttacking = false;
     public bool cooldown = false;
     public bool inRange = false;
+    public bool isDead = false;
     void Start()
     {
         //auto assign the player object and attack root, the enemy controller, and the animator
@@ -45,7 +46,7 @@ public class EnemyCOPILOT : MonoBehaviour
         //set the animator float "MotionSpeed" to speed
         animator.SetFloat("MotionSpeed", speed);
         //check if the trigger volume has been triggered
-        if (triggerVolume.GetComponent<trigger>().isTriggered == true)
+        if (triggerVolume.GetComponent<trigger>().isTriggered == true && isDead == false)
         {
             //if the player is not in range, move towards the player object defined before using enemyController
             if (inRange == false)

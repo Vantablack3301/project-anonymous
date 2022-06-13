@@ -11,6 +11,12 @@ public class enemyHealth : MonoBehaviour
         if (Health <= 0)
         {
             Debug.Log("enemy is dead");
+            //wait for a few seconds
+            StartCoroutine(WaitForTime(4));
+            //before destroying the enemy, have its opacity fade for a few seconds
+            var enemy = GetComponent<SpriteRenderer>();
+            enemy.color = new Color(1, 1, 1, 0);
+
             Destroy(gameObject);
         }
     }
@@ -19,5 +25,12 @@ public class enemyHealth : MonoBehaviour
     {
         Health -= damage;
         Debug.Log("enemy taken damage");
+    }
+
+    //create a coroutine that waits for a specified amount of time
+    IEnumerator WaitForTime(float seconds)
+    {
+        //wait for the cooldown time
+        yield return new WaitForSeconds(seconds);
     }
 }

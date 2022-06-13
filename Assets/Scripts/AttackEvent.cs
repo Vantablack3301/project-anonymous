@@ -46,7 +46,7 @@ public class AttackEvent : MonoBehaviour
 
     void Update()
     {
-        StartCoroutine(Cooldown());
+        //StartCoroutine(Cooldown());
         var playerController = playerObject.GetComponent<ThirdPersonController>();
         var playerScript = playerObject.GetComponent(typeof(ThirdPersonController)) as ThirdPersonController;
         float isAttacking = Input.GetAxis("Fire1");
@@ -55,6 +55,7 @@ public class AttackEvent : MonoBehaviour
             animationObject.SetTrigger("Attack");
             cooldown = true;
             playerScript.canMove = false;
+            StartCoroutine(Cooldown());
             //Debug.Log("cooldown in effect");
             foreach (GameObject enemy in AttackRange.ToList())
             {
@@ -65,6 +66,13 @@ public class AttackEvent : MonoBehaviour
                 else
                 {
                     enemy.GetComponent<enemyHealth>().TakeDamage(Damage);
+                    //if the enemy health script attached to the enemy in question has a health value of 0 or less, trigger the death animation on the enemyCOPILOT animator object 
+                    if (enemy.GetComponent<enemyHealth>().Health <= 0)
+                    {
+                        enemy.GetComponent<Animator>().SetTrigger("Death");
+                        //set the isDead bool on the enemyCOPILOT script to true
+                        enemy.GetComponent<EnemyCOPILOT>().isDead = true;
+                    }
                 }
 
             }
